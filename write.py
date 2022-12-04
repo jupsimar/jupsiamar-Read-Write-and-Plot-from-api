@@ -3,7 +3,7 @@ import json
 import time
 
 for value in range(200):
-    weather = f'http://api.openweathermap.org/data/2.5/weather?q=new+york&kathmandu&appid=65ad96e90e401baf71ab393dfffbc44d'
+    weather = f'http://api.openweathermap.org/data/2.5/weather?q=new+york&kathmandu&appid=[Your API KEY]'
 
     response = urllib.request.urlopen(weather)
     weather_result = json.loads(response.read())
